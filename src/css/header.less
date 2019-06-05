@@ -1,9 +1,149 @@
+@import './reset.css';
+@import './common.less';
 
+.header{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: #191919;
+	.h-search-bar{
+		height: 35px;
+		line-height: 35px;
+		font-size: 12px;
+		.cn{
+			float: left;
+			padding: 0 10px;
+			a{
+				color: #fff;
+			}
+		}
+		
+		.line{
+			float: left;
+			margin-top:9px;
+			height: 16px;
+			width: 0;
+			border-left:1px solid #fff;
+		}
+		.en{
+			float: left;
+			padding: 0 10px;
+			a{
+				color: #727272;
+			}
+		}
 
-body{
-	#header{
-	color: red;
-	font-size: 100px;
-	background: url(../images/logo.png) no-repeat;
+		form{
+			float: left;
+
+			.input-search{
+				width: 60px;
+				height: 20px;
+				padding-left: 5px;
+				color: #fff;
+				background-color: #252525;
+
+			}
+			button{
+				width: 20px;
+				height: 20px;
+				vertical-align: middle;
+				background: url(../images/search.png) no-repeat;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.nav-box{
+	position: absolute;
+	top: 35px;
+	width: 100%;
+	height: 79px;
+	background-color: #151515;
+	.logo{
+		width: 183px;
+		height: 74px;
+	}
+	h1{
+		text-indent: -1000em;
+		background: url(../images/logo.png) no-repeat;
+	}
+	.nav-item{
+		float: left;
+		margin-top: 25px;
+		margin-left: 8px;
+		a{
+			display: block;
+			height: 48px;
+			padding:0 8px;
+			color: #fff;
+			font-size: 16px;
+			border-bottom: 2px solid transparent;
+			&:hover{
+			border-color: #fd4e50;
+			};
+		}
+		.last-nav{
+			font-weight: bold;
+			color: orange;
+		}
+
+		.pro-list{
+			display: none;
+			position: absolute;
+			z-index: 999;
+			top: 75px;
+			left: 0;
+			width: 100%;
+			border-bottom:1px solid #ccc;
+			background-color: rgba(241, 241, 241, 0.9);
+			box-shadow: 0 5px 5px -5px #9e9e9e;
+			cursor: pointer;
+		}
+		.pro-box{
+			width: 1035px;
+			margin: 10px auto 0;
+			padding-bottom: 15px;
+			overflow: auto;
+			ul{
+				width: 1450px;
+				.pro-item{
+					float: left;
+					a{
+						display: block;
+						width: 114px;
+						height: 182px;
+						text-align: center;
+						border-bottom: 2px solid transparent;
+						&:hover{
+							border-color: #fd4e50;
+						};
+						img{
+							width: 114px;
+							height: 114px;
+
+						}
+						.name{
+							margin-top: 25px;
+							font-size: 14px;
+							color: #333;
+						}
+					}
+				}
+				.l-line{
+					float: left;
+					width: 0;
+					height: 160px;
+					border-right: 2px solid #ccc;
+				}
+			}
+		}
+
+	}
+	.has-down:hover{
+		.pro-list{
+			display: block;
+		}
 	}
 }

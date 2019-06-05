@@ -1,20 +1,8 @@
-
-
-body,
-p,
-ul,
-ol,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-fieldset,
-figure {
+body, p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,fieldset,figure {
     margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
 }
 
 ul,
@@ -55,9 +43,6 @@ textarea {
 }
 
 
-a:hover {
-    text-decoration: underline
-}
 
 button,
 input,
@@ -68,6 +53,19 @@ textarea {
 
 button {
     border-radius: 0
+}
+
+.clearfix:after{
+content: "";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.clearfix {
+/* 触发 hasLayout */
+    zoom: 1;
 }
 
 

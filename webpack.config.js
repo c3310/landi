@@ -72,7 +72,7 @@ module.exports = {
                }]},
 		  { test: /\.(ttf|eot|svg|woff|woff2)$/, use: 'url-loader' },
 		  { test:/\.html$/, use:'html-withimg-loader' },
-	      //{ test: /\.css$/, use: ['style-loader', 'css-loader'] },
+	      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
 	      { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'] },
 	      //{ test: /\.scss$/, use: ['style-loader', 'css-loader', 'less-loader'] }
 	      {
